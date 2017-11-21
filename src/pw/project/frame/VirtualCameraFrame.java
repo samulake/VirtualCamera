@@ -50,59 +50,62 @@ public class VirtualCameraFrame extends JFrame {
 		
 		
 		JPanel rotationButtonPanel = new JPanel();
-		rotationButtonPanel.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Obrót",
+		rotationButtonPanel.setName("Rotation");
+		rotationButtonPanel.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), rotationButtonPanel.getName(),
 				TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
 		rotationButtonPanel.setBounds(985, 273, 304, 184);
 		getContentPane().add(rotationButtonPanel);
 		rotationButtonPanel.setLayout(null);
-		rotationButtonPanel.setName("Obrót");
+		
 
-		JButton button = new MoveButton("GÓRA");
+		JButton button = new MoveButton("UP");
 		button.setBounds(110, 16, 80, 75);
 		rotationButtonPanel.add(button);
 		button.addActionListener(pointOperationListener);
 
-		JButton button_1 = new MoveButton("LEWO");
+		JButton button_1 = new MoveButton("LEFT");
 		button_1.setBounds(6, 102, 80, 75);
 		rotationButtonPanel.add(button_1);
 		button_1.addActionListener(pointOperationListener);
 
-		JButton button_2 = new MoveButton("DÓ£");
+		JButton button_2 = new MoveButton("DOWN");
 		button_2.setBounds(110, 102, 80, 75);
 		rotationButtonPanel.add(button_2);
 		button_2.addActionListener(pointOperationListener);
 
-		JButton button_3 = new MoveButton("PRAWO");
+		JButton button_3 = new MoveButton("RIGHT");
 		button_3.setBounds(217, 102, 80, 75);
 		rotationButtonPanel.add(button_3);
 		button_3.addActionListener(pointOperationListener);
 
 		JPanel inclinationButtonPanel = new JPanel();
-		inclinationButtonPanel.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Przekrzywienie",
+
+		inclinationButtonPanel.setName("Inclination");
+		inclinationButtonPanel.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), inclinationButtonPanel.getName(),
 				TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
 		inclinationButtonPanel.setBounds(986, 513, 194, 98);
 		getContentPane().add(inclinationButtonPanel);
 		inclinationButtonPanel.setLayout(null);
-		inclinationButtonPanel.setName("Przekrzywienie");
 
-		JButton inclinationLeftButton = new MoveButton("LEWO");
+		JButton inclinationLeftButton = new MoveButton("LEFT");
 		inclinationLeftButton.setBounds(6, 16, 80, 75);
 		inclinationButtonPanel.add(inclinationLeftButton);
 		inclinationLeftButton.addActionListener(pointOperationListener);
 		inclinationLeftButton.addActionListener(pointOperationListener);
 
-		JButton inclinationRightButton = new MoveButton("PRAWO");
+		JButton inclinationRightButton = new MoveButton("RIGHT");
 		inclinationRightButton.setBounds(110, 16, 80, 75);
 		inclinationButtonPanel.add(inclinationRightButton);
 		inclinationRightButton.addActionListener(pointOperationListener);
 
 		JPanel zoomButtonPanel = new JPanel();
-		zoomButtonPanel.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Zoom",
+
+		zoomButtonPanel.setName("Zoom");
+		zoomButtonPanel.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), zoomButtonPanel.getName(),
 				TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
 		zoomButtonPanel.setBounds(1192, 513, 87, 172);
 		getContentPane().add(zoomButtonPanel);
 		zoomButtonPanel.setLayout(null);
-		zoomButtonPanel.setName("Zoom");
 
 		JButton zoomPlus = new MoveButton("+");
 		zoomPlus.setBounds(6, 16, 75, 75);

@@ -15,12 +15,12 @@ public class BasicOperationsButtonPanel extends JPanel {
 		setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Podstawowe kierunki",
 				TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
 
-		add(new MoveButton("W PRZ”D"));
-		add(new MoveButton("G”RA"));
-		add(new MoveButton("W TY£"));
-		add(new MoveButton("LEWO"));
-		add(new MoveButton("D”£"));
-		add(new MoveButton("PRAWO"));
+		add(new MoveButton("FORWARD"));
+		add(new MoveButton("UP"));
+		add(new MoveButton("BACKWARD"));
+		add(new MoveButton("LEFT"));
+		add(new MoveButton("D√ì≈Å"));
+		add(new MoveButton("RIGHT"));
 
 		setLayout(null);
 
