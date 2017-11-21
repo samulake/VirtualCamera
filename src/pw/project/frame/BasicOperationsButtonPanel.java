@@ -12,7 +12,8 @@ import javax.swing.border.TitledBorder;
 public class BasicOperationsButtonPanel extends JPanel {
 
 	public BasicOperationsButtonPanel(ActionListener actionListener) {
-		setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Podstawowe kierunki",
+		setName("Basic");
+		setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), getName(),
 				TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
 
 		add(new MoveButton("FORWARD"));
@@ -50,8 +51,6 @@ public class BasicOperationsButtonPanel extends JPanel {
 				}
 			}
 		}
-		
-		setName("Basic");
 
 	}
 }
