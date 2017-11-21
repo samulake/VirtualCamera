@@ -1,9 +1,7 @@
 package pw.project.frame;
 
 import java.awt.Font;
-import java.util.function.BiFunction;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 import javax.swing.JButton;
 
