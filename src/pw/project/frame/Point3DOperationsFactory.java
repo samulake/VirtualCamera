@@ -57,7 +57,5 @@ public class Point3DOperationsFactory {
 			point.y = -1*point.x * Math.sin(radians) + point.y * Math.cos(radians);
 			return point;
 		};
-		//point.x = (point.x * Math.cos((-1) * rotateStep * Math.PI/180)) + (point.y*Math.sin((-1)*rotateStep* (Math.PI/180)));
-		//point.y = (-1*point.x * Math.sin((-1)*rotateStep * Math.PI/180)) + (point.y*Math.cos((-1)*rotateStep* (Math.PI/180)));
 	}
 }
