@@ -16,8 +16,7 @@ public class Screen extends JPanel{
     	cubes.add(new Cube(new Point3D(100, 100, 1000), new Point3D(200, 200, 1200), 100, 200));
     	cubes.add(new Cube(new Point3D(200, 200, 2000), new Point3D(300, 300, 1200), 100, 100));
       	cubes.add(new Cube(new Point3D(-400, 200, 2000), new Point3D(-300, 300, 1200), 100, 100));
-      	cubes.add(new Cube(new Point3D(-400, 200, 800), new Point3D(-300, 300, 1100), 100, 100));
-        
+      	cubes.add(new Cube(new Point3D(-400, 200, 800), new Point3D(-300, 300, 1100), 100, 100));    
     }
     
     @Override
