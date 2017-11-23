@@ -6,7 +6,7 @@ import java.util.function.Function;
 import javax.swing.JButton;
 
 public final class MoveButton extends JButton {
-	Function<Point3D, Point3D> pointOperation;
+	private Function<Point3D, Point3D> pointOperation;
 	
 	{
 		pointOperation = point -> point;
@@ -20,6 +20,7 @@ public final class MoveButton extends JButton {
 	}
 	
 	public MoveButton(String text, Function<Point3D, Point3D> pointOperation) {
+		super(text);
 		this.pointOperation = pointOperation;
 	}
 	
@@ -30,4 +31,9 @@ public final class MoveButton extends JButton {
 	public void setPointOperation(Function<Point3D, Point3D> pointOperation) {
 		this.pointOperation = pointOperation;
 	}
+
+	public Function<Point3D, Point3D> getPointOperation() {
+		return pointOperation;
+	}
+	
 }

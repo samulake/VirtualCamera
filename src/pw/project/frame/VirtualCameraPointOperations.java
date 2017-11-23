@@ -21,7 +21,7 @@ public class VirtualCameraPointOperations {
 	static {
 		operationsMap = new HashMap<>();
 		
-		operationsMap.put("Basic PRAWO", point -> {
+		operationsMap.put("Basic RIGHT", point -> {
 			point.x -= step;
 			return point;
 		});
