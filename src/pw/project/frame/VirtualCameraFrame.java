@@ -1,7 +1,6 @@
 package pw.project.frame;
 
 import java.awt.EventQueue;
-import java.awt.FlowLayout;
 import java.awt.Toolkit;
 
 import static pw.project.frame.VirtualCameraPointOperations.*;
@@ -10,7 +9,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import java.awt.Color;
-import java.awt.Component;
 
 import javax.swing.border.EtchedBorder;
 import java.awt.event.ActionListener;

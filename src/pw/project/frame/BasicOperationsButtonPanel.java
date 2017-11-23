@@ -9,21 +9,22 @@ import javax.swing.JPanel;
 import javax.swing.UIManager;
 import javax.swing.border.TitledBorder;
 
-public class BasicOperationsButtonPanel extends JPanel {
+public class BasicOperationsButtonPanel extends ButtonPanel {
+	
+	private double translationStep = 10;
 
 	public BasicOperationsButtonPanel(ActionListener actionListener) {
-		setName("Basic");
-		setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), getName(),
-				TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
-
-		add(new MoveButton("FORWARD", Point3DOperationsFactory.translationByOZ(-20)));
-		add(new MoveButton("UP", Point3DOperationsFactory.translationByOY(20)));
-		add(new MoveButton("BACK", Point3DOperationsFactory.translationByOZ(20)));
-		add(new MoveButton("LEFT", Point3DOperationsFactory.translationByOX(20)));
-		add(new MoveButton("DOWN", Point3DOperationsFactory.translationByOY(-20)));
-		add(new MoveButton("RIGHT", Point3DOperationsFactory.translationByOX(-20)));
-
-		setLayout(null);
+		super();
+		initializeButtons(actionListener);
+	}
+	
+	protected void initializeButtons(ActionListener actionListener) {
+		add(new MoveButton("FORWARD", Point3DOperationsFactory.translationByOZ(-translationStep)));
+		add(new MoveButton("UP", Point3DOperationsFactory.translationByOY(translationStep)));
+		add(new MoveButton("BACK", Point3DOperationsFactory.translationByOZ(translationStep)));
+		add(new MoveButton("LEFT", Point3DOperationsFactory.translationByOX(translationStep)));
+		add(new MoveButton("DOWN", Point3DOperationsFactory.translationByOY(-translationStep)));
+		add(new MoveButton("RIGHT", Point3DOperationsFactory.translationByOX(-translationStep)));
 
 		int buttonsPerRow = 3;
 		int startX = 10, startY = 20;
