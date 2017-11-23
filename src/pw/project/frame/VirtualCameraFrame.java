@@ -42,7 +42,7 @@ public class VirtualCameraFrame extends JFrame {
 		screenPanel.setBounds(10, 10, 942, 671);
 		getContentPane().add(screenPanel);
 
-		basicDirectionButtonPanel = new BasicOperationsButtonPanel(pointOperationListener);
+		basicDirectionButtonPanel = new BasicOperationsButtonPanel("Basic", pointOperationListener);
 		getContentPane().add(basicDirectionButtonPanel);
 		basicDirectionButtonPanel.setLocation(985, 10);
 		

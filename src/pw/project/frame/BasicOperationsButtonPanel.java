@@ -13,8 +13,8 @@ public class BasicOperationsButtonPanel extends ButtonPanel {
 	
 	private double translationStep = 10;
 
-	public BasicOperationsButtonPanel(ActionListener actionListener) {
-		super();
+	public BasicOperationsButtonPanel(String name, ActionListener actionListener) {
+		super(name);
 		initializeButtons(actionListener);
 	}
 	

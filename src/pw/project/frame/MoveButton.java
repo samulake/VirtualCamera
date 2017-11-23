@@ -23,7 +23,7 @@ public final class MoveButton extends JButton {
 		super(text);
 		this.pointOperation = pointOperation;
 	}
-	
+
 	public Point3D doPointOperation(Point3D point) {
 		return pointOperation.apply(point);
 	}

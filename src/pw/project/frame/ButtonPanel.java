@@ -9,9 +9,8 @@ import javax.swing.border.TitledBorder;
 
 public abstract class ButtonPanel extends JPanel {
 	
-	public ButtonPanel() {
-		setName("Basic");
-		setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), getName(),
+	public ButtonPanel(String name) {
+		setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), name,
 				TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
 
 		setLayout(null);
